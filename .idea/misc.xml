@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/drawable/list_switch_button.xml" value="0.37025641025641026" />
+        <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/drawable/main_bnv_select_colot.xml" value="0.37025641025641026" />
         <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/layout/activity_main.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/layout/fragment_list.xml" value="0.33" />
+        <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/layout/fragment_statistics.xml" value="0.35989583333333336" />
+        <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/layout/fragment_write.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/menu/item_main_bnv.xml" value="0.35989583333333336" />
         <entry key="..\:/Users/0529y/Desktop/android/Diary/app/src/main/res/menu/menu_main_bnv_item.xml" value="0.35989583333333336" />
       </map>
