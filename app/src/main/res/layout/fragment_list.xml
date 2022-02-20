@@ -6,26 +6,42 @@
     android:layout_height="match_parent">
 
     <lib.kingja.switchbutton.SwitchMultiButton
+        android:id="@+id/list_sb_select"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.045"
+        app:layout_constraintTop_toTopOf="@id/list_btn_today_write"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/list_btn_today_write"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
         app:selectedTab="0"
         app:selectedColor="#eb7b00"
         app:textSize="14sp"
         android:padding="8dp"
-        app:switchTabs="@array/switch_tabs"/>
+        app:switchTabs="@array/switch_tabs" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/list_btn_today_write"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="List"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.055"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/list_switch_button"
+        android:text="오늘 작성"
+        android:textColor="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
