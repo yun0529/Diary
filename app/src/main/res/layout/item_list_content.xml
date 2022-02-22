@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_list_cv_feel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/item_list_iv_feel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_feel_05"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/item_list_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘 멋진 친구를 만났다."
+            app:layout_constraintTop_toTopOf="@id/item_list_cv_feel"
+            app:layout_constraintStart_toEndOf="@id/item_list_cv_feel"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/item_list_iv_weather"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_sun"
+            app:layout_constraintTop_toBottomOf="@id/item_list_tv_title"
+            app:layout_constraintStart_toStartOf="@id/item_list_tv_title"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/item_list_iv_png"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_png"
+            app:layout_constraintTop_toTopOf="@id/item_list_iv_weather"
+            app:layout_constraintStart_toEndOf="@id/item_list_iv_weather"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06월 10일"
+            app:layout_constraintTop_toTopOf="@id/item_list_iv_png"
+            app:layout_constraintBottom_toBottomOf="@id/item_list_iv_png"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="5dp"
+            android:textColor="#0000FF"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
