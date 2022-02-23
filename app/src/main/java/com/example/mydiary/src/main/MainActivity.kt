@@ -1,5 +1,6 @@
 package com.example.mydiary.src.main
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import com.example.mydiary.R
 import com.example.mydiary.config.BaseActivity
@@ -39,5 +40,15 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding :: in
                 }
                 false
             })
+    }
+    @SuppressLint("ResourceType")
+    fun fragmentChange(fragmentNum : Int){
+        if(fragmentNum == 0) {
+            supportFragmentManager.beginTransaction().replace(R.id.main_fl_fragment, ListFragment()).commitAllowingStateLoss()
+        } else if(fragmentNum == 1) {
+            supportFragmentManager.beginTransaction().replace(R.id.main_fl_fragment, WriteFragment()).commitAllowingStateLoss()
+            binding.mainBnv.selectedItemId = R.id.item_main_write
+        }
+
     }
 }
