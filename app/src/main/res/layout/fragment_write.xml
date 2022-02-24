@@ -166,9 +166,12 @@
         android:orientation="horizontal"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/write_btn_save"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="저장"
@@ -177,10 +180,11 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/write_btn_delete"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="삭제"
@@ -190,17 +194,17 @@
 
         <View
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/write_btn_close"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:text="닫기"
             android:textColor="@color/white"
             android:layout_gravity="end"
             android:background="@drawable/btn_ripple_custom_orange"/>
-
 
     </LinearLayout>
 

@@ -45,6 +45,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(ActivityMainBinding :: in
     fun fragmentChange(fragmentNum : Int){
         if(fragmentNum == 0) {
             supportFragmentManager.beginTransaction().replace(R.id.main_fl_fragment, ListFragment()).commitAllowingStateLoss()
+            binding.mainBnv.selectedItemId = R.id.item_main_list
         } else if(fragmentNum == 1) {
             supportFragmentManager.beginTransaction().replace(R.id.main_fl_fragment, WriteFragment()).commitAllowingStateLoss()
             binding.mainBnv.selectedItemId = R.id.item_main_write
