@@ -35,10 +35,11 @@
                     android:layout_marginTop="10dp"/>
 
                 <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/statistics_pc_feel_percent"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
@@ -73,7 +74,7 @@
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
@@ -109,7 +110,7 @@
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_gravity="center_horizontal"/>
 
             </LinearLayout>
