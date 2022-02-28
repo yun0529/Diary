@@ -69,7 +69,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"/>
 
-                <com.github.mikephil.charting.charts.PieChart
+                <com.github.mikephil.charting.charts.BarChart
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
@@ -105,7 +105,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"/>
 
-                <com.github.mikephil.charting.charts.PieChart
+                <com.github.mikephil.charting.charts.LineChart
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
