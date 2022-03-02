@@ -71,6 +71,7 @@
                     android:layout_marginTop="10dp"/>
 
                 <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/statistics_bc_day_feel"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
@@ -107,6 +108,7 @@
                     android:layout_marginTop="10dp"/>
 
                 <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/statistics_lc_feel_change"
                     android:layout_width="250dp"
                     android:layout_height="250dp"
                     android:layout_marginTop="10dp"
