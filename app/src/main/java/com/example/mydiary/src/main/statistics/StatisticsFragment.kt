@@ -111,7 +111,7 @@ class StatisticsFragment : BaseFragment<FragmentStatisticsBinding>(FragmentStati
         leftAxis3.isGranularityEnabled = true
         leftAxis3.axisMinimum = 0f
         leftAxis3.axisMaximum = 5f
-        leftAxis3.yOffset = -9f
+        leftAxis3.yOffset = -5f
         leftAxis3.textColor = Color.rgb(255, 192, 56)
 
         val rightAxis3: YAxis = binding.statisticsLcFeelChange.axisRight
